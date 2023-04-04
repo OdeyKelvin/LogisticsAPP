@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik");
+@import url("https://fonts.googleapis.com/css2?family=Krub");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .line-gradient {
+    @apply bg-no-repeat bg-cover;
+    background-image: linear-gradient(
+      94.06deg,
+      #ffb629 -1.21%,
+      #ffda56 58.66%,
+      #ffd7a6 116.84%
+    );
+  }
+  .stack {
+    @apply grid grid-cols-1 grid-rows-1;
+  }
+  .stack > * {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+  .project-cards {
+    background-image: linear-gradient(
+      0deg,
+      #091242 14.34%,
+      rgba(60, 60, 60, 0) 43.86%
+    );
+    background-blend-mode: multiply;
+  }
+  .btns {
+    @apply px-10 py-5 w-fit mx-auto bg-primary2 relative after:absolute after:w-full after:scale-[0.3] after:aspect-square after:rounded-full after:bg-circle after:-right-2 after:-bottom-7 after:translate-x-20 after:translate-y-10 overflow-hidden hover:after:scale-150 after:transition-all after:duration-700 ease-in-out text-white font-krub font-semibold text-base z-50 after:-z-30;
+  }
+.subtext{
+  font-family:"Rubik";
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+}
+.blog{
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 35px;
+  font-weight:600; 
+}
+.color{
+  margin: 0 auto;
+  width: 76%;
+  padding-top:  60px;
+  padding-right: -19px;
+  
+
+}
+.calendar1{
+  margin: 0 auto;
+  width: 10%;
+  padding-right: 53px;
+  margin-top: -310px;
+padding-left: 10px;
+}
+
+.textdate{
+font-size: larger;
+font-family: "Rubik";
+font-weight: 600;
+}
+.month{
+  font-size: small;
+  font-weight: 500;
+}
+.inland{
+  flex-direction: row;
+}
+.textblock{
+  align-items: center;
+}
+.here{
+  font-size: 25px;
+  margin: 0 auto;
+  width: 30%;
+  margin-right: -400px;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 2px;
+  text-align: center;
+  margin-top: 30px;
+}
+.content{
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+}
+.dedication{
+  font-size: 20px;
+}
+
+}
